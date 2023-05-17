@@ -22,3 +22,6 @@ jobs:
         timeout-minutes: 5
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5.0.1
+        with:
+          title: Automatic dependency version update
+          reviewers: uros-reveal
