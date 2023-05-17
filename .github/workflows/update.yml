@@ -9,9 +9,8 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - id: files
-        uses: jitterbit/get-changed-files@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Set up Python 3.9
         if: ${{ env.FILES != '' }}
         uses: actions/setup-python@v2
