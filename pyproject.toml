@@ -10,7 +10,23 @@ packages = [{include = "congenial_umbrella"}]
 python = "^3.10"
 numpy = "^1.22.0"
 Shapely = "^2.0.0"
+PyYAML = ">=5.4.1,<6.0.0"
+opencv-contrib-python = ">=4.5.5.0,<4.6.0.0"
+scikit-learn = "^1.1.0"
+scikit-image = "^0.19.2"
+matplotlib = "^3.5.2"
+markdown2 = "^2.4.3"
+protobuf = ">=3.0.0,<3.21.0"
 
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.27.1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+coverage = { version = "^5.0.2", extras = ["toml"] }  # Required by pytest-cov.
+pytest-order = "^1.0.1"
 
 [build-system]
 requires = ["poetry-core"]
